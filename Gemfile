@@ -12,8 +12,9 @@ gem "sprockets-rails"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
+gem 'solidus_i18n', '~> 2.1', '>= 2.1.1'
 
-
+gem 'solidus_mailchimp_sync', '~> 1.0.0.beta05'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
