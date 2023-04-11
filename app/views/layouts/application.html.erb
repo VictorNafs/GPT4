@@ -12,5 +12,17 @@
 
   <body>
     <%= yield %>
+
+<% if I18n.available_locales.length > 1 %>
+  <ul class="language-selector">
+    <% I18n.available_locales.each do |locale| %>
+      <li>
+        <%= link_to "#{locale}", url_for(locale: locale), class: (I18n.locale == locale ? 'selected' : '') %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+
   </body>
 </html>
